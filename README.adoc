@@ -1,0 +1,19 @@
+= Minikube mongo environment
+
+This is a minikube mongo environment for getting started with kubernetes.
+
+== Environment Setup
+* Install https://minikube.sigs.k8s.io/docs/start/[minikube]
+* Install kubectl https://kubernetes.io/docs/home#learn-how-to-use-kubernetes[kubectl]
+* Check kubectl context
+```
+kubectl config current-context
+```
+
+* Switch kubectl context if not set to minikube:
+```
+kubectl config use-context minikube
+```
+
+== Apply Environment
+Execute the script `./scripts/apply-all.ps1` from root directory, to apply all yaml files.

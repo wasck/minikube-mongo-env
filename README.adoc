@@ -21,3 +21,13 @@ kubectl config use-context minikube
 
 == Apply Environment
 Execute the script `./scripts/apply-all.ps1` from root directory, to apply all yaml files.
+
+== Start external service
+* Get the mongo express service
+```
+kubectl get service
+```
+* Start the service from minikube
+```
+minikube service mongo-express-service
+```

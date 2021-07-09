@@ -9,6 +9,10 @@ This is a minikube mongo environment for getting started with kubernetes.
 ```
 kubectl config current-context
 ```
+* Start minikube
+```
+minikube start
+```
 
 * Switch kubectl context if not set to minikube:
 ```
